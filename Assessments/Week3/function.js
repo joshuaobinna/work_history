@@ -16,27 +16,45 @@
   ```
 */
 
-// 1. write a function that takes a number as a parameter and returns it as a
-// string
+function isEven(four) {
+  if (4 / 2 === 2) {
+    return 'correct';
+  } else { return 'incorrect';}
+} console.log(isEven(4));
+ // output: correct
 
-// 2. write a function that takes a number as a parameter and returns that
-// number subtracted by 1
+function subtractByOne(five) {
+  return 5 - 1;
+} console.log(subtractByOne(5)); //output: 4
 
-// 3. write a function that takes a number as a parameter and returns that
-// number added by 1
+function addByOne(five) {
+  return 1 + 5;
+} console.log(addByOne(5)); //output: 6
 
-// 4. write a function that takes two number as its parameters and returns then
-// addition of those two numbers
+function addition(six, five) {
+  return 6 + 5; }
+  console.log(addition(6 + 5)); //output: 11
+}
 
-// 5. write a function that takes two number as its parameters and returns then
-// squared of those two numbers
+function square(six, five) {
+  return 6 * 6; 5 * 5;
+}  console.log(square((6 * 6), (5 * 5));
+  // output: 36 25
+}
+function isOdd(five) {
+  if (5 / 2 !=== 2 || 3) {
+    return true;
+  } else {
+    return false;
+  } console.log(isOdd(5));
+} // output: true
 
-// 6. write a function that takes a number and returns true if the number is odd
-// and false if it is not
+function countries(Nigeria, Japan) {
+  return 'These two countires' + ',' + Nigeria + ',' + Japan + 'have bilateral relationship' + '.';
+} console.log(countries('Nigeria', 'Japan'));
+// These two countries, Nigeria,Japan have bilateral relatinship.
 
-// 7. write a function that takes two strings as its parameters and returns the
-// combination of those two strings
-
-// 8. write a function that takes the radius of a circle a parameter and returns
-// the Area of the circle.
-// For this exercise π (pie) can equal `3.14`
+function getArea(radius) {
+  return radius * 3.14;
+} console.log(getArea(radius));
+}
