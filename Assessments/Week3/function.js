@@ -16,37 +16,37 @@
   ```
 */
 
-function isEven(four) {
-  if (4 / 2 === 2) {
+function isEven(num) {
+  if (num%2 === 0) {
     return 'correct';
   } else { return 'incorrect';}
-} console.log(isEven(4));
+} console.log(isEven(num));
  // output: correct
 
-function subtractByOne(five) {
-  return 5 - 1;
-} console.log(subtractByOne(5)); //output: 4
+function subtractByOne(num) {
+  return num- 1;
+} console.log(subtractByOne(num));
 
-function addByOne(five) {
-  return 1 + 5;
-} console.log(addByOne(5)); //output: 6
+function addByOne(num) {
+  return num + 1;
+} console.log(addByOne(num));
 
-function addition(six, five) {
-  return 6 + 5; }
-  console.log(addition(6 + 5)); //output: 11
+function addition(numOne, numTwo) {
+  return numOne + numTwo; }
+  console.log(addition(numOne + numTwo));
 }
 
-function square(six, five) {
-  return 6 * 6; 5 * 5;
-}  console.log(square((6 * 6), (5 * 5));
+function square(numOne, numTwo) {
+  return numOne * numOne; numTwo * numTwo;
+}  console.log(square((numOne * numOne), (numTwo * numberTwo));
   // output: 36 25
 }
-function isOdd(five) {
-  if (5 / 2 !=== 2 || 3) {
+function isOdd(num) {
+  if (num%2 !== 0) {
     return true;
   } else {
     return false;
-  } console.log(isOdd(5));
+  } console.log(isOdd(num));
 } // output: true
 
 function countries(Nigeria, Japan) {
