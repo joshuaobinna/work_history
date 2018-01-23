@@ -8,7 +8,7 @@
 // and `false` if it is not
 
 function isEven(num) {
-  if (num%2 === 0) {
+  if (num% === 0) {
     return true;
   }
   else if (num.isNaN) {
@@ -17,7 +17,7 @@ function isEven(num) {
   else {
     console.log("That is not a number");
   }
-}isEven(num)
+}
 
 // 2. The function isNaN(num) will return true if num is not a number
 // or false if it is.
@@ -26,9 +26,9 @@ function isEven(num) {
 // console.log => "That is not a number", if it is not a number
 
 function isEvenV2(num) {
-  if (num%2 === 0) {return true;}
+  if (num% === 0) {return true;}
   else {return false;}
-} isEvenV2(num)
+}
 
 // 3. Complete the switch statment in the `getLunchOrder` with the following
 // case conditions:
@@ -55,7 +55,7 @@ function getLunchOrder(lunchOrder) {
       default:
         console.log("How does a sandwich sound");
   }
-} getLaunchOrder('launchOrder')
+}
 
 // 4. Complete the `shouldINap` function
 // it returns `true` if mood is equal to "tired" or "sleepy"
@@ -67,7 +67,7 @@ function shouldINap(mood) {
   } else {
     retun false;
   }
-} shouldINap("mood")
+}
 
 // 5. Extend the `shouldINap` function
 // to include an `else if` statement that checks if mood is equal to "energetic"
