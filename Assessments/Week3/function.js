@@ -54,7 +54,7 @@ function countries(Nigeria, Japan) {
 } console.log(countries('Nigeria', 'Japan'));
 // These two countries, Nigeria,Japan have bilateral relatinship.
 
-function getArea(radius) {
-  return radius * 3.14;
-} console.log(getArea(radius));
+function Area(radius) {
+  return radius * radius * 3.14;
+} console.log(Area(radius));
 }
