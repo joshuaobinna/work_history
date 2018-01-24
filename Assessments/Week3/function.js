@@ -21,7 +21,7 @@ function isEven(num) {
     return 'correct';
   } else { return 'incorrect';}
 } console.log(isEven(num));
- // output: correct
+ 
 
 function subtractByOne(num) {
   return num- 1;
@@ -39,7 +39,7 @@ function addition(numOne, numTwo) {
 function square(numOne, numTwo) {
   return numOne * numOne; numTwo * numTwo;
 }  console.log(square((numOne * numOne), (numTwo * numberTwo));
-  // output: 36 25
+  
 }
 function isOdd(num) {
   if (num%2 !== 0) {
@@ -47,7 +47,7 @@ function isOdd(num) {
   } else {
     return false;
   } console.log(isOdd(num));
-} // output: true
+} 
 
 function countries(Nigeria, Japan) {
   return 'These two countires' + ',' + Nigeria + ',' + Japan + 'have bilateral relationship' + '.';
