@@ -8,7 +8,7 @@
 // and `false` if it is not
 
 function isEven(num) {
-  if (num% === 0) {
+  if (num%2 === 0) {
     return true;
   }
   else if (num.isNaN) {
@@ -26,7 +26,7 @@ function isEven(num) {
 // console.log => "That is not a number", if it is not a number
 
 function isEvenV2(num) {
-  if (num% === 0) {return true;}
+  if (num%2 === 0) {return true;}
   else {return false;}
 }
 
