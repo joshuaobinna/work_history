@@ -19,42 +19,45 @@
 function isEven(num) {
   if (num%2 === 0) {
     return 'correct';
-  } else { return 'incorrect';}
-} console.log(isEven(num));
- 
+  } else {
+     return 'incorrect';
+   }
+}
+
 
 function subtractByOne(num) {
   return num- 1;
-} console.log(subtractByOne(num));
+}
 
 function addByOne(num) {
   return num + 1;
-} console.log(addByOne(num));
+}
 
 function addition(numOne, numTwo) {
   return numOne + numTwo; }
-  console.log(addition(numOne + numTwo));
 }
 
 function square(numOne, numTwo) {
   return numOne * numOne; numTwo * numTwo;
-}  console.log(square((numOne * numOne), (numTwo * numberTwo));
-  
+}
+
 }
 function isOdd(num) {
   if (num%2 !== 0) {
     return true;
   } else {
     return false;
-  } console.log(isOdd(num));
-} 
+  }
+}
 
 function countries(Nigeria, Japan) {
-  return 'These two countires' + ',' + Nigeria + ',' + Japan + 'have bilateral relationship' + '.';
-} console.log(countries('Nigeria', 'Japan'));
-// These two countries, Nigeria,Japan have bilateral relatinship.
-
-function Area(radius) {
-  return radius * radius * 3.14;
-} console.log(Area(radius));
+  return 'These two countires' + ',' + Nigeria + ','
+   + Japan + 'have bilateral relationship' + '.';
 }
+
+function square(rad) {
+  return rad * rad  * 3.14;
+} console.log(square(5));
+/* tyring it out on node terminal...
+ the out put is 78.5
+ */
