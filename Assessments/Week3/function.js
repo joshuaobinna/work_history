@@ -26,19 +26,19 @@ function isEven(num) {
 
 
 function subtractByOne(num) {
-  return num- 1;
+  return num -= 1;
 }
 
 function addByOne(num) {
-  return num + 1;
+  return num += 1;
 }
 
 function addition(numOne, numTwo) {
-  return numOne + numTwo; }
+  return numOne += numTwo; }
 }
 
 function square(numOne, numTwo) {
-  return numOne * numOne; numTwo * numTwo;
+  return [numOne**2, numTwo**2];
 }
 
 }
@@ -55,9 +55,7 @@ function countries(Nigeria, Japan) {
    + Japan + 'have bilateral relationship' + '.';
 }
 
-function square(rad) {
-  return rad * rad  * 3.14;
-} console.log(square(5));
-/* tyring it out on node terminal...
- the out put is 78.5
- */
+function area(rad) {
+  let area = 3.14 * (rad**2);
+  return area;
+}
