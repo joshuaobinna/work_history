@@ -25,21 +25,26 @@ function isEven(num) {
 }
 
 
-function subtractByOne(num) {
-  return num -= 1;
+function subtractByOne(num)
+  let subtractByOne = (num -= 1);
+  return subtractByOne;
 }
 
 function addByOne(num) {
-  return num += 1;
+  let addByOne = (num += 1);
+   return addByOne;
 }
 
-function addition(numOne, numTwo) {
-  return numOne += numTwo; }
+function addNumOneNumTwo(numOne, numTwo) {
+  let x = (numOne += numTwo);
+   return x;
 }
 
 function square(numOne, numTwo) {
-  return [numOne**2, numTwo**2];
+  let square = [numOne**2, numTwo**2];
+  return square;
 }
+
 
 }
 function isOdd(num) {
@@ -50,9 +55,8 @@ function isOdd(num) {
   }
 }
 
-function countries(Nigeria, Japan) {
-  return 'These two countires' + ',' + Nigeria + ','
-   + Japan + 'have bilateral relationship' + '.';
+function variable(stringOne, stringTwo) {
+  return stringOne.concat(stringTwo);
 }
 
 function area(rad) {
