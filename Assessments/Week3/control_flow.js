@@ -11,7 +11,7 @@ function isEven(num) {
   if (num%2 === 0) {
     return true;
   }
-  else if (num.isNaN) {
+  else if (Number.isNaN()) {
     return true;
   }
   else {
@@ -78,5 +78,7 @@ function shouldINapV2(mood) {
     return true;
   } else if ("mood" === energetic) {
     console.log("Go use that energy and learn more javascript");
-  }  else {return false;}
+  }  else {
+    return false;
+  }
 }
