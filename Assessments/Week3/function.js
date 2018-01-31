@@ -26,17 +26,17 @@ function isEven(num) {
 
 
 function subtractByOne(num)
-  let subtractByOne = (num -= 1);
+  let subtractByOne = (num - 1);
   return subtractByOne;
 }
 
 function addByOne(num) {
-  let addByOne = (num += 1);
+  let addByOne = (num + 1);
    return addByOne;
 }
 
 function addNumOneNumTwo(numOne, numTwo) {
-  let x = (numOne += numTwo);
+  let x = (numOne + numTwo);
    return x;
 }
 
