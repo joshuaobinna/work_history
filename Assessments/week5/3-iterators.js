@@ -21,12 +21,11 @@
   ```
 */
 
-const week = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+const week = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
 
 // 1. Using the `forEach` function complete the instructions below:
 // Console.log every day in the week array
-  week.forEach(function(weekDays) {
-   console.log(' - ' + weekDays);
+   week.forEach(weekDays => console.log('-' + weekDays));
  });
 
 // 2. Using the `some` function complete the instructions below:
