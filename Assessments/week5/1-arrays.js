@@ -18,51 +18,57 @@
 
 // 1. write a function that takes an array as its first parameter and returns
 // the first item in the array
-day = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday',];
-event(day);
-function event(day) {
+days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday',];
+getFirstDay(days);
+function getFirstDay(days) {
 return day.slice(0, 1);
 }
 
 
 // 2. write a function that takes an array as its first parameter and returns
 // the last item in the array
-day = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday',];
-event(day);
-function event(day) {
-return day.slice(-1);
+toDoList = ['study', 'movies', 'laundary', 'soccer', 'work'];
+selectLastItem(toDoList);
+function selectLastItem(toDoList) {
+return toDoList.slice(-1);
 }
 
 // 3. write a function that takes an array as its first parameter and a value as
 // its second parameter. The function returns a new array with the value added to
 // beginning of the array.
- age = [2, 3, 4, 5, 6];
- value = 1;
- variable(age, value);
- function variable(age, value) {
- age.unshift(value);{
- return age;}
+ cost = ['$2', '$3', '$4', '$5'];
+ addedCost = '$1';
+ listTotalCost(cost, addedCost);
+ function  listTotalCost(cost, addedCost) {
+ cost.unshift(addedCost);
+ let newCost = cost;
+ {
+   return newCost;
  }
-
+};
 // 4. write a function that takes an array as its first parameter and a value as
 // its second parameter. The function returns a new array with the value added to
 // end of the array.
- age = [1, 2, 3, 4, 5];
- value = 6;
- variable(age, value);
- function variable(age, value) {
- age.push(value);{
- return age;}
- }
+ customers = ['Ben', 'Kate', 'Mustafi', 'Ebuka', 'Bola'];
+ newcustomer = 'Steve';
+ showAllCustomers(array, value);
+ function showAllCustomers(customers, newCustomer) {
+ customers.push(newCustomer);
+ let allCustomers = customers; {
+      return allCustomers;
+   }
+};
 
 // 5. write a function that takes an array as its first parameter, a value as
 // its second parameter and an index as the third parameter. The function returns
 // a new array where the value can be found at that given index.
-age = [1, 2, 3, 4, 5];
-value = 6;
+courses = ['Physics', 'Chemistry', 'Biology'];
+value = 'accounting';
 index = 1;
-variable(age, value,index);
-function variable(age, value,index) {
-  age[1] = value;
-  return age;
+getAllCourses(courses, value, index);
+function getAllCoourses(courses, value, index) {
+  courses[1] = value;
+  let allCourses = courses; {
+    return allCourses;
+  }
 }
