@@ -1,0 +1,80 @@
+In this assessment, you will use will be tested on your knowledge of JavaScript
+concepts from Section 2 of the video lectures. Answer them in YOUR OWN WORDS.
+Fill free to provide examples to help illustrate your train of thought.
+
+1. What is a syntax parser?
+   This is a program that reads  codes and determines what it does and if tha grammer is valid.
+   syntax parser is a program that reads JavaScript code and translates it to something the
+   computer can understand. These programs, complilers, interpreters, process codes, reading them
+   character by character, trying to determine if the syntax is valid and implementing the
+  syntax in the way the computer can understand.
+
+
+2. What is a lexical environment?
+   This is where something sits physically in the code you write.
+   Example;   function countWord() {
+              var str = 'Superman';
+            }
+  Lexically, the variable is sitting inside the function, that is the code written sits physically
+  inside inside the function. Where things sits in codes written tells us where it will be in the
+  be in the computers memory and how it will interact with other variables and functions.
+  Generally, lexical environment is about where codes are written and the things found around it.
+
+3. What is the execution context?
+   This is a wrapper to help manage the code that is running. They are wrappers that the JavaScript engine
+   uses to wrap codes. Execution context contains written codes and sometimes things beyond what you've
+   written. Any time a code runs it is within an execution context.
+
+4. What are name/value pairs?
+   This is a name which maps a unique value.
+   Example;  amount = "Twenty thousand"
+   'Amount' is the name, 'Twenty thousand' is the value.
+
+5. What is an Object?
+   An object is a collection of name value pair.
+   Example;   suspect: {
+                 Age: 39,
+                 Height: 7ft.
+                 Name: {
+                   firstName: 'John',
+                   lastName: 'Doe'
+                 }
+             }
+    From the example above, the object(suspect) is a name and its value is a collection of name/values
+    pair. Age and height are just name/value pairs respectively. Name has a value which is a collection
+    of another name/value pair.
+
+6. What does it mean that something is "Global"?
+   When something is available and accessible everywhere and to everything in the code it is said to be
+   global.
+
+7. Explain how hoisting works in JavaScript.
+    When variables are declared, the JavaScript engine set up a memory space for the variable and puts a
+    place holder called `Undefined`, this is so because it doesn't know what the value will
+    eventually be, this happens in the creation phase of the execution context. this is known as
+    Hoisting. During the execution phase, the codes run synchronously and value are assigned to variables. Any
+    variable not assigned a value remains undefined.
+    All variables in JavaScript are initially set to undefined.
+
+8. What does undefined mean?
+   Undefined is the value the JavaScript engine assigns to a variable that is declared without a value
+   assigned to it.
+   Example;  var a;
+            console.log(a);
+            output: Undefined
+
+9. Explain the concept of Scope?
+   Scope is where variables are accessible and available in your code.
+   When a function is called, it looks at it's variable environment and if it can not find a variable,
+   it goes to reference the outer environment(the global execution context) for variables. The entire
+   act of searching the chain of outer environment for variables is called SCOPE.
+
+10. JavaScript is single threaded. What does this mean?
+    This simply means one at a time. This means it executes one command at a time.
+
+11. What is the difference between synchronous and asynchronous?
+    Synchronous simply means one at a time. One line of code is being executed at a time in the order
+    that it appears...
+                while
+    ...asynchronous means more than one at a time. Codes may be executing and cause other codes to
+    start executing within the engine at the same time.

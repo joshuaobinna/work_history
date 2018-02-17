@@ -1,0 +1,80 @@
+In this assessment, you will use will be tested on your knowledge of JavaScript
+concepts from Section 3 of the video lectures. Answer them in YOUR OWN WORDS.
+Fill free to provide examples to help illustrate your train of thought.
+
+1. JavaScript is a dynamically typed language. What does this mean?
+
+  This means that you don't tell the engine what type of data the engine holds, it figures it out
+  while your code is running. Variables can hold different values and will be figured out during
+  execution. There's no keyword to tell the JavaScript engine what kind of data you intend to put
+  inside the variable. it knows when a data is a is Boolean, string, number.
+
+2. What is a primitive type? Explain each primitive type.
+
+  Primitive type is a data type that represents a single value. It is different from an object(which
+  is a collection of name/value pair). Primitive types are single values. Types of primitive types
+  include;
+  UNDEFINED: this simply means lack of existence. JavaScript engine sets a variable to Undefined initially
+  and will stay that way until it is assigned a value. It is safe practice not to assign Undefined to a
+  variable.
+  NULL: This is also a lack of existence. It is better to assign null to a variable to say something
+  doesn't have a value.
+  BOOLEAN: This can either be true or false.
+  NUMBER: In JavaScript, this is the only numeric type. It is called floating point number.
+  STRING: These are words, numbers brought together with single or double quotes.
+  examples are; 'Hello', "World", '1', "9".
+  SYMBOLS: They are used in ES6 (the next version of JavaScript).
+
+3.What are operators and operands?
+  Operators are symbols or functions representing a mathematical operation.
+  Examples are; +, -, /, *, <, ===
+  They are syntaticaly different. They take two or more parameters and return one result.
+  Example;  function +(a, b) {
+     var c = a + b;
+     return c;
+  }
+
+  Operands on the other hand are quantities upon which a mathematical operation is performed.
+  Example; var a = 4 + 5;
+         4 and 5 above are called operands.
+
+4. In what order does operators get called?
+   Opreator precedence determines the order in which operators are called. Operators having higher
+   precedence are called first.
+   Example;       var a = 3 + 4 * 5;
+                console.log(a);
+                output is 23.
+    The operator (*) has a higher precedence and is called first, after which the operator (+) is
+    called. When operators have the same precedence, associativity determines the order in which
+    they will be called. Associativity could either be Left-to-Right (Left associativity) or
+    Right-To-Left (Right associativity).
+
+5. What does it mean when a value is coerced?
+   This means converting a value from one type to another. A value can be coerced from a string to
+   a number, number to string and so on. This is made possible because JavaScript is dynamically
+   typed.
+   Example; var a = '1' + 2;
+            console.log(a);
+            output: 12
+  Here, 2 is coerced into a string, so instead of outputting the number 3, the result is something
+  that looks like the number 12
+
+            var b = 'Good' + 'day';
+            console.log(b);
+            output: Good day
+  In this example, the sting are coerced to numbers and the operator (+) adds them  up.
+
+
+6. What is the difference between '==' and '==='?
+   `==` is an operator that compares two values after coercing both values to common Types
+   Example:
+          var a = '3';
+          var b = 3;
+          console.log(a == b);
+          // output: true
+    `===` this is strict inequality. it doesn't coerce values, it only compares value that strictly of the same type.
+    Example:
+           var a = 4 + 1;
+           var c = 3 + 2;
+           console.log(a === c);
+           // output: true
