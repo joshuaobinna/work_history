@@ -73,12 +73,18 @@ Fill free to provide examples to help illustrate your train of thought.
     The keyword is called arguments
 
 12. What is an IIFE? How can they be useful?
-    This stands for Immediately Invoked Function Expression. This has to do with invoking a
-    function immediately after creating it.
+    This stands for Immediately Invoked Function Expression. They are functions that run as soon as they
+    are defined. This has to do with invoking a function immediately after creating it.
     EX. ( let function greeting (name){
              console.log('Hi' + name);
     })(name);
-    IIFE let's a function to be  run at the point of creation.
+
+    usefulness are;
+    it let's a function to be  run at the point of creation.
+    They are used to avoid variable hoisting from within blocks.
+    They protect against polluting the global environment
+    They also allow public access to methods while retaining privacy for variables defined within
+    the function.
 
 13. Explain closures. How can you use them to your advantage in JavaScript?
     Closure is a phenomenon used to explain a situation whereby the execution context closes in all the

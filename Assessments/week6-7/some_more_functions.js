@@ -60,9 +60,9 @@
   // sample input: "Hello World"
   // sample output: null
   let str = "Hello Josh";
-  let a = str.length;
   getHalfString(str);
   function getHalfString(str) {
+          let a = str.length;
        if (a%2 === 0) {
          let halfStr = str.substr(0, a/2);
          return halfStr;

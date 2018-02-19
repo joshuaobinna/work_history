@@ -26,7 +26,8 @@ Fill free to provide examples to help illustrate your train of thought.
   SYMBOLS: They are used in ES6 (the next version of JavaScript).
 
 3.What are operators and operands?
-  Operators are symbols or functions representing a mathematical operation.
+  Operators are symbols or functions used to assign values, compare values, perform arithmetic operations
+  and more. They include conditional, logical, assignment, bitwise, string operators and so on.
   Examples are; +, -, /, *, <, ===
   They are syntaticaly different. They take two or more parameters and return one result.
   Example;  function +(a, b) {
@@ -36,8 +37,12 @@ Fill free to provide examples to help illustrate your train of thought.
   Operators can also be  used to concatetenate/add two strings
 
   Operands on the other hand are quantities upon which a mathematical operation is performed.
+  They can also be any of JavaScript data types(i.e. Booleans, strings, numbers), as well as objects and
+  arrays.
   Example; let a = 4 + 5;
          4 and 5 above are called operands.
+          let greet = 'Hello' + 'Josh';
+        The strings 'Hello' and 'Josh' are operands  
 
 4. In what order does operators get called?
    Operator precedence determines the order in which operators are called. Operators having higher
