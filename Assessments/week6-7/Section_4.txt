@@ -7,7 +7,7 @@ Fill free to provide examples to help illustrate your train of thought.
 
 2. How do you initialize an Object literal?
    By creating an object literal syntax
-   Example; var objectLiteral = {};
+   Example; let objectLiteral = {};
 
 3. What is a Namespace? How does JavaScript handle Namespacing?
    Namespace is a holder or container for varables and functions. it is used to keep Variables
@@ -16,13 +16,13 @@ Fill free to provide examples to help illustrate your train of thought.
    of namespace. The serve as containers for properties, methods and other things needed.
 
 4. What is a JSON? What are some of the Javascript functions used to parse and encode JSON?
-   JASON stands for JavaScript Object Notation.
-   JASON.stringify()
-   JASON.parse()
+   JSON stands for JavaScript Object Notation.
+   JSON.stringify()
+   JSON.parse()
 
 5. What are first class functions?
-   A function is first class if it does everything other types (Boolean, String, Numbers, Objects)
-   does.
+   A function is first class if it is treated like other types (Boolean, String, Numbers, Objects).
+
 
 6. Explain the difference between a function statement and expression.
    Function expression is a unit of code that results in a value and its not compulsory that
@@ -30,21 +30,21 @@ Fill free to provide examples to help illustrate your train of thought.
    doesn't return a value.
 
 7. What does it mean to be passed by value? What types are passed by value?
-   This means making two varaibles the same by referencing or setting equal the value of
-   one variable to the other, the value of the initial variable is copied to two seperate
+   This means making two variables the same by referencing or setting equal the value of
+   one variable to the other, the value of the initial variable is copied to two separate
    spots/address in the memory.
-   Examlpe:  var a = 3;
-             var b;
+   Example:  let a = 3;
+             let b;
              b = a;
   both variable now have the same value because they've been set equal to each other. the
-  value of a now exits in two seperate spots of the memory.
+  value of a now exits in two separate spots of the memory.
   Primitive types(numbers) are passed by value.
 
 8. What does it mean to be passed by reference? What types are passed by reference?
    In by reference two variables point to the same address in the memory. no new memory
    is created unlike by value.
-   Example; var d = {season: "winter"};
-            var e;
+   Example; let d = {season: "winter"};
+            let e;
             d = e;
     what happens here is that instead of setting up a new memory space for e, it simply
     points e to the same address that d points to.
@@ -62,6 +62,8 @@ Fill free to provide examples to help illustrate your train of thought.
 10. What is an array? How are they different in JavaScript than in other languages?
     Arrays are JavaScript way of making lists.
     Array in JavaScript is zero-indexed unlike other languages.
+    Arrays in JavaScript are dynamically typed and thus can contain all types of values without
+    specifically the  types before hand.
 
 11. What are function arguments? What is the keyword that JavaScript gives you to
     access a function's arguments?
@@ -73,9 +75,9 @@ Fill free to provide examples to help illustrate your train of thought.
 12. What is an IIFE? How can they be useful?
     This stands for Immediately Invoked Function Expression. This has to do with invoking a
     function immediately after creating it.
-    EX.  let greeting = function(name){
+    EX. ( let function greeting (name){
              console.log('Hi' + name);
-    }();
+    })(name);
     IIFE let's a function to be  run at the point of creation.
 
 13. Explain closures. How can you use them to your advantage in JavaScript?

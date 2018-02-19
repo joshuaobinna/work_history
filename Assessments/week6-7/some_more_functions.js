@@ -20,10 +20,10 @@
 // EX1:
   // sample input: "Hello World"
   // sample output: 3
-  var words = "confidence";
+  const words = "confidence";
   countVowels(words);
   function countVowels(words) {
-    var numbers = words.match(/[aeiou]/gi).length;
+    const numbers = words.match(/[aeiou]/gi).length;
     return numbers;
   }
 
@@ -37,15 +37,15 @@
 // EX2:
   // sample input: "he"
   // sample output: "HE"
-  var words = 'CAPITALIZE';
+  let words = 'CAPITALIZE';
    getCases(words);
    function getCases(words) {
-        if (words.length < 3 && words.toLowerCase()) {
-         newStr1 = words.toUpperCase();
+        if (words.length < 3 ) {
+        let newStr1 = words.toUpperCase();
          return newStr1;
    }
-        else if (words.toUpperCase && words.length >= 3) {
-      newStr2  = words.slice(0, 3).toLowerCase() + words.substring(3);
+        else if ( words.length >= 3) {
+        let newStr2  = words.slice(0, 3).toLowerCase() + words.slice(3).toUpperCase();
         return newStr2;
    }
 }
@@ -60,10 +60,11 @@
   // sample input: "Hello World"
   // sample output: null
   let str = "Hello Josh";
+  let a = str.length;
   getHalfString(str);
   function getHalfString(str) {
-       if (str.length%2 === 0) {
-         let halfStr = str.substr(0, str.length/2);
+       if (a%2 === 0) {
+         let halfStr = str.substr(0, a/2);
          return halfStr;
        }
        else {
@@ -82,7 +83,7 @@
   function getSum(array)
   {
      let reducer = (accumulator, currentValue) => accumulator + currentValue;
-      sum = array.reduce(reducer);
+     let  sum = array.reduce(reducer);
       return sum;
   }
 
@@ -91,19 +92,19 @@
 // EX:
   // sample input: [1, 7, 1, 4, 1, 6, 4, 5]
   // sample output: 1
-  array = [1, 2, 3, 4, 2, 1, 1];
+   array = [1, 2, 3, 4, 2, 1, 1];
    getMostFreq(array);
    function getMostFreq(array) {
      if (array.length == 0) {
      return null;
    }
      let modeMap = {},
-     maxCount = 1;
-     modes = [array[0]];
+     let maxCount = 1;
+     let modes = [array[0]];
      for (let arrayIndex = 0; arrayIndex < array.length; arrayIndex++) {
      let num = array[arrayIndex];
      if (modeMap[num] == null){
-     modeMap[num] = 1;
+     let modeMap[num] = 1;
    }
      else{ modeMap[num]++;
    }

@@ -30,18 +30,19 @@ Fill free to provide examples to help illustrate your train of thought.
   Examples are; +, -, /, *, <, ===
   They are syntaticaly different. They take two or more parameters and return one result.
   Example;  function +(a, b) {
-     var c = a + b;
+     let c = a + b;
      return c;
   }
+  Operators can also be  used to concatetenate/add two strings
 
   Operands on the other hand are quantities upon which a mathematical operation is performed.
-  Example; var a = 4 + 5;
+  Example; let a = 4 + 5;
          4 and 5 above are called operands.
 
 4. In what order does operators get called?
-   Opreator precedence determines the order in which operators are called. Operators having higher
+   Operator precedence determines the order in which operators are called. Operators having higher
    precedence are called first.
-   Example;       var a = 3 + 4 * 5;
+   Example;       let a = 3 + 4 * 5;
                 console.log(a);
                 output is 23.
     The operator (*) has a higher precedence and is called first, after which the operator (+) is
@@ -53,28 +54,23 @@ Fill free to provide examples to help illustrate your train of thought.
    This means converting a value from one type to another. A value can be coerced from a string to
    a number, number to string and so on. This is made possible because JavaScript is dynamically
    typed.
-   Example; var a = '1' + 2;
+   Example; let a = '1' + 2;
             console.log(a);
             output: 12
   Here, 2 is coerced into a string, so instead of outputting the number 3, the result is something
   that looks like the number 12
 
-            var b = 'Good' + 'day';
-            console.log(b);
-            output: Good day
-  In this example, the sting are coerced to numbers and the operator (+) adds them  up.
-
 
 6. What is the difference between '==' and '==='?
    `==` is an operator that compares two values after coercing both values to common Types
    Example:
-          var a = '3';
-          var b = 3;
+          let a = '3';
+          let b = 3;
           console.log(a == b);
           // output: true
-    `===` this is strict inequality. it doesn't coerce values, it only compares value that strictly of the same type.
+    `===` this is strict equality. it doesn't coerce values, it only compares value that strictly are of the same type.
     Example:
-           var a = 4 + 1;
-           var c = 3 + 2;
+           let a = 4 + 1;
+           let c = 3 + 2;
            console.log(a === c);
            // output: true

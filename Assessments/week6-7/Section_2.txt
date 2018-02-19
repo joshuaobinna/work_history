@@ -3,9 +3,9 @@ concepts from Section 2 of the video lectures. Answer them in YOUR OWN WORDS.
 Fill free to provide examples to help illustrate your train of thought.
 
 1. What is a syntax parser?
-   This is a program that reads  codes and determines what it does and if tha grammer is valid.
+   This is a program that reads  codes and determines what it does and if the grammar is valid.
    syntax parser is a program that reads JavaScript code and translates it to something the
-   computer can understand. These programs, complilers, interpreters, process codes, reading them
+   computer can understand. These programs, compilers, interpreters, process codes, reading them
    character by character, trying to determine if the syntax is valid and implementing the
   syntax in the way the computer can understand.
 
@@ -13,7 +13,7 @@ Fill free to provide examples to help illustrate your train of thought.
 2. What is a lexical environment?
    This is where something sits physically in the code you write.
    Example;   function countWord() {
-              var str = 'Superman';
+              let str = 'Superman';
             }
   Lexically, the variable is sitting inside the function, that is the code written sits physically
   inside inside the function. Where things sits in codes written tells us where it will be in the
@@ -59,7 +59,7 @@ Fill free to provide examples to help illustrate your train of thought.
 8. What does undefined mean?
    Undefined is the value the JavaScript engine assigns to a variable that is declared without a value
    assigned to it.
-   Example;  var a;
+   Example;  let a;
             console.log(a);
             output: Undefined
 
